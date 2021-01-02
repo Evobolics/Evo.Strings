@@ -8,5 +8,10 @@ namespace System
         {
             return StringsRoot.Strings.NormalizeNewLines(input, newLine);
         }
+
+        public static byte[] GetUtf8Bytes(this string utf8String)
+        {
+            return StringsRoot.Strings.GetUtf8Bytes(utf8String);
+        }
     }
 }

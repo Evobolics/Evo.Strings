@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using System.Text.RegularExpressions;
 
 namespace Evo
@@ -14,5 +15,9 @@ namespace Evo
             return NewLineRegex.Replace(input, newLine);
         }
 
+        public byte[] GetUtf8Bytes(string utf8String)
+        {
+            return UTF8.GetBytes(utf8String);
+        }
     }
 }
